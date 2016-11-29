@@ -36,6 +36,9 @@ var compiled = ejs.compile(fs.readFileSync('./template/index.ejs', 'utf8'));
 
 //Fill out our templates
 var html = compiled({
+	
+	     bright:req.body.primaryBrightColor,
+	     dark:req.body.primaryDarkColor,
 	     logo: req.body.logo,
 	     mainMessageImage: req.body.mmImage,
 	     mainMessageText: req.body.mmText,
