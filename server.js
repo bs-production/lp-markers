@@ -40,7 +40,7 @@ var html = compiled({
 	     bright:req.body.primaryBrightColor,
 	     dark:req.body.primaryDarkColor,
 	     logo: req.body.logo,
-	     mainMessageImage: req.body.mmImage,
+	     mainMessageImage: req.body.mainMessageImage,
 	     mainMessageText: req.body.mmText,
 	     mainMessageOffer: req.body.mmOffer,
 	     mainMessageDisc: req.body.mmDisc,
