@@ -150,21 +150,21 @@ p.top-phone {
 }
 
 /****** MAIN MESSAGE ******/
-.main-message-wrap {
+.lp-main-message-wrap {
     background: url('<%- mainMessageImage %>') no-repeat left center;
     background-size: cover;
 }
-.main-message-wrap > .row {
+.lp-main-message-wrap > .row {
     height: 450px;
     padding: 30px 0;
 }
-.main-text {
+.lp-main-text {
     position: relative;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     top: 50%;
 }
-.main-text span {
+.lp-main-text span {
     font-family: 'Cabin',sans-serif;
 }
 span.headline {
@@ -196,10 +196,10 @@ span.subheadline a:hover {
     border-bottom: 3px dotted rgba(255,255,255,.5);
 }
 @media screen and (max-width: 640px){
-    .main-message-wrap > .row {
+    .lp-main-message-wrap > .row {
         height: 350px;
     }
-    .main-text span {
+    .lp-main-text span {
         text-align: center;
     }
     span.headline {
@@ -521,9 +521,9 @@ span.subheadline a:hover {
           </div>
         </div><!-- END HEADER -->
             
-        <div class="main-message-wrap">
+        <div class="lp-main-message-wrap">
             <div class="row">
-                <div class="columns large-7 main-text">
+                <div class="columns large-7 lp-main-text">
                     <span class="headline"><%- mainMessageText %></span>
                     <span class="subheadline"><a href="/about-us/coupons.html" target="_blank">
                     <%- mainMessageOffer %></a></span>
