@@ -7,6 +7,10 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css" />
         <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.4.2/trumbowyg.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.4.2/ui/trumbowyg.min.css">
  
     </head>
     <body>
@@ -102,9 +106,11 @@
            
            
                <p>Footer List(please use HTML)</p>
-                <textarea name="footerList"></textarea> <br>
+                <textarea name="footerList" id="trumbowyg-demo"></textarea> <br>
            
-      
+                <script>
+                    $('#trumbowyg-demo').trumbowyg();
+               </script>
 
 
               <button class="large expanded alert button" type="submit">Mix It Up!</button>
