@@ -584,5 +584,45 @@ span.subheadline a:hover {
             </div>
         </div>
     </div><!-- END FOOTER -->
+    
+    
+    <p><script type="text/javascript">
+			printWindow = 
+			{
+				init : function () {
+					$('a.print').bind('click', printWindow.printCoupon);
+				},
+				printCoupon : function () {
+					var win = window.open('', 'Image', 'resizable=yes,...');
+					if (win.document) {
+						win.document.writeln('<img src="'+ $(this).attr('href') +'" /><p>Call <strong><span id="numberassigned_3" class="mongoose_phone">1-800-466-8664</span></strong> to schedule your appointment with Foundation Recovery Systems!</p>');
+						win.document.close();
+						win.focus();
+						win.print();
+					}
+					return false;
+				}
+			}
+			
+			$(document).ready(function () {
+				printWindow.init();
+				
+				var couponItems = $('.coupon_item');
+				
+				if( couponItems.length > 4 ) {
+					$(couponItems).addClass('coupon_item_small');
+				}
+
+				$('.coupon_item').hover(
+					function(){
+						$(this).children('div.expiration_notice').toggleClass('highlight');
+					},
+					function(){
+						$(this).children('div.expiration_notice').toggleClass('highlight');
+					});
+
+			});
+		</script></p>
+
     </body>
 </html>
