@@ -44,8 +44,17 @@ var html = compiled({
 	     mainMessageText: req.body.mmText,
 	     mainMessageOffer: req.body.mmOffer,
 	     mainMessageDisc: req.body.mmDisc,
-
-
+	
+	
+              l1t: req.body.l1text,
+	      l1: req.body.l1,
+	      l2t: req.body.l2text,
+	      l2: req.body.l2,
+              l3t: req.body.l3text,
+	      l3: req.body.l3,
+              l4t: req.body.l4text,
+	      l4: req.body.l4,
+	
 	      ch1: req.body.cH1,
 	      cp1: req.body.cP1,
 	      ch2: req.body.cH2,
