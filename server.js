@@ -47,6 +47,10 @@ var html = compiled({
 	
 	      formID: req.body.formID,
 	
+	
+	      fc: req.body.fc,
+	      footerList: req.body.footerList,
+	
               l1t: req.body.l1text,
 	      l1: req.body.l1,
 	      l2t: req.body.l2text,
