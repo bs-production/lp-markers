@@ -45,6 +45,7 @@ var html = compiled({
 	     mainMessageOffer: req.body.mmOffer,
 	     mainMessageDisc: req.body.mmDisc,
 	
+	      formID: req.body.formID,
 	
               l1t: req.body.l1text,
 	      l1: req.body.l1,
